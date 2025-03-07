@@ -1,0 +1,113 @@
+= Mainframe to Quarkus
+Saïd Boudjelda; Chaker Fezai; Charles Sabourdin;Antoine Sabot-Durand
+:description: Mainframe to Quarkus presentation
+:copyright: CC BY-SA 4.0
+:data-uri:
+:sectids!:
+:includegifs:
+:toc2:
+:sectanchors:
+:idprefix:
+:idseparator: -
+:icons: font
+:source-highlighter: highlight.js
+:source-language: java
+:macros-on: subs="macros"
+:imagesdir: ../resources/images
+:hide-uri-scheme:
+:revealjs_theme: solarized
+:revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@5.1.0
+:revealjs_hash: true
+:revealjs_width: 1500
+:revealjs_center: false
+:docinfo: shared
+:slides-url: //TODO define slides url
+:slides-src: https://github.com/SCIAM-FR/mainframe-to-quarkus
+
+[.columns]
+== Saïd Boudjelda
+
+[.column]
+* Tech lead at SCIAM
+//TODO: add more info
+
+[.column]
+image::sb.jpg[role="pull-right",width="200"]
+
+[.columns]
+== Chaker Fezai
+
+[.column]
+* Tech lead at SCIAM
+//TODO: add more info
+
+[.column]
+image::cf.jpg[role="pull-right",width="200"]
+
+
+[.columns]
+== Antoine Sabot-Durand
+
+[.column]
+* Java Champion
+* Tech lead at SCIAM
+* Former CDI spec lead
+* Former MicroProfile Health and Fault Tolerance spec lead
+* Follow me: @antoine.sabot-durand.net
+
+[.column]
+image::asd.jpg[role="pull-right",width="200"]
+
+[.columns]
+== Charles Sabourdin
+
+[.column]
+* serial speaker
+//TODO: add more info
+
+[.column]
+image::cs.jpg[role="pull-right",width="200"]
+
+
+== Agenda
+
+//TIP: _Slides_ here {slides-url}
+
+* icon:clock-o[] Introduction
+* icon:clock-o[] A migration overview
+* icon:clock-o[] Quarkus the disruptive standard
+* icon:clock-o[] H in Kubernetes is for happiness
+* icon:clock-o[] Ingesting Data
+* icon:clock-o[] EBCDIC for never
+* icon:clock-o[] Kogito and BPMN for orchestration
+* icon:clock-o[] MyBatis: oldy but goody
+
+
+
+include::parts/intro.adoc[]
+
+include::parts/quarkus.adoc[]
+
+include::parts/k8s.adoc[]
+
+include::parts/ebcdic.adoc[]
+
+include::parts/kogito.adoc[]
+
+
+== Conclusion
+
+== Take away
+
+//TODO: add more info
+
+== References
+
+NOTE: _Slides_ are accessible here {slides-url}
+
+NOTE: _Slides source_ {slides-src}
+
+NOTE: Slides generated with _Asciidoctor_ and _Reveal.js_
+
+
+
