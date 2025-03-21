@@ -28,7 +28,12 @@ Saïd Boudjelda; Chaker Fezai; Charles Sabourdin;Antoine Sabot-Durand
 == Saïd Boudjelda
 
 [.column]
-* Tech lead at SCIAM
+* Tech lead / Senior Backend Engineer at SCIAM
+* Senior Backend Engineer
+* Open source contributor (I can say that )
+* Some passion for FP and Distributed Systems
+* Follow me: @bmscomp (Github)
+
 //TODO: add more info
 
 [.column]
