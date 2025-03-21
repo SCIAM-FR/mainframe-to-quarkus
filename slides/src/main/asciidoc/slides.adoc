@@ -97,6 +97,8 @@ include::parts/k8s.adoc[]
 
 include::parts/ebcdic.adoc[]
 
+include::parts/ingestion.adoc[]
+
 include::parts/kogito.adoc[]
 
 
