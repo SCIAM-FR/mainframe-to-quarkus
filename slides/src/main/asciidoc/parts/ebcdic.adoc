@@ -1,6 +1,13 @@
 
 == How to deal with EBCDIC
 
-Hello
 
+* Extented Binary Coded Decimal Interchange Code (EBCDIC)
+* Axway CFT (Cross File Transfer ) No way CFT is an external component for us
+* Bring Cobrix with the complexty of Apache Spark
+* JZOS Batch Launcher and Toolkit Capabilities and Features (We do not want the complexity of z/OS)
+
+The solution is to use a simple pretty and complete library called `JRecord` 
+
+Advantages of JRecord: 
 
