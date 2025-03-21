@@ -1,5 +1,5 @@
 = Mainframe to Quarkus
-Saïd Boudjelda; Chaker Fezai; Charles Sabourdin;Antoine Sabot-Durand
+Antoine Sabot-Durand; Charles Sabourdin; Chaker Fezai; Saïd Boudjelda;
 :description: Mainframe to Quarkus presentation
 :copyright: CC BY-SA 4.0
 :data-uri:
