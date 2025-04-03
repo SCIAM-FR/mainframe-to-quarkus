@@ -15,7 +15,7 @@ Antoine Sabot-Durand; Charles Sabourdin; Chaker Fezai; Saïd Boudjelda;
 :macros-on: subs="macros"
 :imagesdir: ../resources/images
 :hide-uri-scheme:
-:revealjs_theme: solarized
+:revealjs_theme: white
 :revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@5.1.0
 :revealjs_hash: true
 :revealjs_width: 1500
@@ -24,15 +24,30 @@ Antoine Sabot-Durand; Charles Sabourdin; Chaker Fezai; Saïd Boudjelda;
 :slides-url: //TODO define slides url
 :slides-src: https://github.com/SCIAM-FR/mainframe-to-quarkus
 
+
+[.columns]
+== Antoine Sabot-Durand
+
+[.column]
+* Java Champion
+* Tech lead at SCIAM
+* Former CDI spec lead
+* Former MicroProfile Health and Fault Tolerance spec lead
+* Follow me: @antoine.sabot-durand.net
+
+[.column]
+image::asd.jpg[role="pull-right",width="200"]
+
+
 [.columns]
 == Saïd Boudjelda
 
 [.column]
-* Tech lead / Senior Backend Engineer at SCIAM
+* Tech lead / Senior Backend Engineer @SCIAM
 * Senior Backend Engineer
 * Open source contributor (I can say that )
 * Some passion for FP and Distributed Systems
-* Follow me: @bmscomp (Github)
+* Follow me: @bmscomp (GitHub)
 
 //TODO: add more info
 
@@ -49,19 +64,6 @@ image::sb.jpg[role="pull-right",width="200"]
 [.column]
 image::cf.jpg[role="pull-right",width="200"]
 
-
-[.columns]
-== Antoine Sabot-Durand
-
-[.column]
-* Java Champion
-* Tech lead at SCIAM
-* Former CDI spec lead
-* Former MicroProfile Health and Fault Tolerance spec lead
-* Follow me: @antoine.sabot-durand.net
-
-[.column]
-image::asd.jpg[role="pull-right",width="200"]
 
 [.columns]
 == Charles Sabourdin
@@ -115,6 +117,3 @@ NOTE: _Slides_ are accessible here {slides-url}
 NOTE: _Slides source_ {slides-src}
 
 NOTE: Slides generated with _Asciidoctor_ and _Reveal.js_
-
-
-

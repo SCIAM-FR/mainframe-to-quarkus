@@ -1,6 +1,13 @@
+== Main Section 1
 
-== The ingestion challange
+This is the first main section.
 
-Hello
+-- Subsection 1
+This is the first subsection.
 
+-- Subsection 2
+This is another subsection inside Section 1.
+
+== Main Section 2
+This is the second main section.
 

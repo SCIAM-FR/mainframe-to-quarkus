@@ -9,5 +9,3 @@
 
 The solution is to use a simple pretty and complete library called `JRecord` 
 
-Advantages of JRecord: 
-
