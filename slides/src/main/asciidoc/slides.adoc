@@ -80,16 +80,14 @@ image::cs.jpg[role="pull-right",width="200"]
 
 //TIP: _Slides_ here {slides-url}
 
-* icon:clock-o[] Introduction
-* icon:clock-o[] A migration overview
-* icon:clock-o[] Quarkus the disruptive standard
-* icon:clock-o[] H in Kubernetes is for happiness
-* icon:clock-o[] Ingesting Data
-* icon:clock-o[] EBCDIC for never
-* icon:clock-o[] Kogito and BPMN for orchestration
-* icon:clock-o[] MyBatis: oldy but goody
-
-
+* icon:clock-o[] Introduction and Architecture contexte et Storytelling [Antoine]
+* icon:clock-o[] From EBCDIC to ASCII, a massive ingestion strategies [Said]
+* icon:clock-o[] Management of K8s jobs for the Ignite cluster. [Chaker]
+* icon:clock-o[] Tooling, CI/CD, Cucumber, Liquibase [Antoine]
+* icon:clock-o[] Kogito and BPMN for business worklow and orchestration [Chaker]
+* icon:clock-o[] Vault for Quarkus [Said]
+* icon:clock-o[] UIs for managing ingestion jobs in K8s and Kogito [Chaker]
+* icon:clock-o[] Front-end tools and back-end integration with MyBatis ORM. [Antoine]
 
 include::parts/intro.adoc[]
 
