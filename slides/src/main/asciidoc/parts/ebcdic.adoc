@@ -1,6 +1,12 @@
 
 == How to deal with EBCDIC
 
+=== What are possible solutions
+
+* 
+* 
+
+=== EBCDIC for never
 
 * Extented Binary Coded Decimal Interchange Code (EBCDIC)
 * Axway CFT (Cross File Transfer ) No way CFT is an external component for us
