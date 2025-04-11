@@ -1,6 +1,157 @@
+== Orchestration
 
-== BPMN and Kogito
+=== Workflow Technologies
 
-Hello
+[%notitle]
+=== Grand Announcement
 
+image::../../resources/images/kogito/workflow.png[role="pull-center",width="300"]
 
+=== Cooking Pizza Workflow
+
+image::../../resources/images/kogito/recette.png[role="pull-center",width="1200"]
+
+=== Cooking Pizza Workflow
+
+image::../../resources/images/kogito/recette2.png[role="pull-center",width="1200"]
+
+=== Cooking Pizza Workflow
+
+image::../../resources/images/kogito/recette3.png[role="pull-center",width="1000"]
+
+[source,subs="verbatim,quotes"]
+----
+public class Pizzeria {
+    ...
+    public Pizza cookingPizza(int numberOfPizzas, int time) {
+        //Make pizza dough
+        var dough = beaterService.makePizzaDough(numberOfPizzas);
+        //Roll out the dough and top
+        var rollOutTop = rollOutService(dough);
+        //Bake the pizza
+        var pizza = ovenService.bake(rollOutTop,time);
+        // Cut pizza
+        pizza = ovenService.cut(pizza);
+        return pizza;
+    }
+}
+----
+
+=== Order Shipment Workflow
+
+image::../../resources/images/kogito/shipping1_1.png[role="pull-bottom",width="1200"]
+
+=== Order Shipment Workflow
+
+image::../../resources/images/kogito/order-sagav1_1.png[role="pull-bottom",width="1200"]
+
+[transition=zoom]
+=== Order Shipment Workflow
+
+image::../../resources/images/kogito/order-saga_v1_2.png[role="pull-bottom",width="1200"]
+
+[transition=zoom]
+=== BPMN 2.0
+
+[transition-speed=fast]
+=== BPMN 2.0
+
+image::../../resources/images/kogito/bpmn.png[role="pull-bottom",width="1000"]
+
+=== Order Shipment Workflow BPMN 2.0
+
+image::../../resources/images/kogito/orders.svg[role="pull-bottom",width="2000"]
+
+[transition=zoom]
+=== Kogito
+
+image::../../resources/images/kogito/kogito_logo.png[role="pull-bottom",width="400"]
+
+=== Kogito
+
+[.column]
+*Next-gen Cloud native Business Automation*
+
+[%step]
+=== icon:lightbulb-o[lg] Cogito ergo sum
+
+[.quote]
+Cloud native Business Automation for building Intelligent applications backed by battle-tested capabilities
+
+[.column]
+image::../../resources/images/kogito/kogito_1.svg[role="pull-bottom",width="400"]
+
+=== Traditional platform BPMN
+
+[%step]
+* icon:box[1x] A large monolith and Stateful
+* icon:project-diagram[1x] Not Optimized for cloud and architecture microservices.
+* icon:clock[1x] Long startup time
+* icon:microchip[1x] Large compute consumption
+* icon:tachometer[1x] Poor performance
+* icon:user-cog[1x] Affect developers productivity
+
+=== WHY KOGITO
+
+[cols="1a,1a"]
+|===
+|
+* icon:cloud[1x] *Cloud first priority*
+* icon:layer-group[1x] *Optimized for cloud architecture*
+* icon:gears[1x] *Multi runtime mode*
+* icon:microchip[1x] *Technology Enabler*
+* icon:code[1x] *Developer-centric Experience*
+| image::../../resources/images/kogito/kogito_2.png[width="900"]
+|===
+
+=== TOOLING
+
+image::../../resources/images/kogito/kogito_tools.svg[width="900"]
+
+[transition=zoom]
+=== DEMO
+
+[transition=zoom]
+=== Order Shipment Workflow
+
+image::../../resources/images/kogito/demo_order_1.svg[width="1800"]
+
+=== What you need for your first workflow
+
+image::../../resources/images/kogito/stacks_1.png[width="700"]
+
+=== CODE GENERATION
+
+[%step]
+[.text-center.small]
+Traditional Pipeline
+
+[%step]
+image::../../resources/images/kogito/code_gen_tradi.svg[width="1200",align="center"]
+
+[%step]
+[.text-center.small]
+Kogito Pipeline
+
+[%step]
+[.image-center]
+image::../../resources/images/kogito/code_gen_kogito.svg[width="1200",align="center"]
+
+=== Challenges of Microservice Architecture
+
+[cols="1a,1a"]
+|===
+|
+* *Observability*
+* *Scalability*
+* *Easy to use / evolve*
+* *High availability*
+* *Schedules*
+* *Human operation friendly*
+|
+* *Fault-Tolerance(Retry)*
+* *Atomicity*
+* *Data Consistency (Saga)*
+* *Long Running Friendly*
+
+|===

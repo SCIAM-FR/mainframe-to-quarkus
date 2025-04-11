@@ -1,6 +1,24 @@
+== High-Performance Distributed File Processing
 
-== Kubernetes in the place
+image::../../resources/images/k8s/inge_stacks.png[role="pull-center",width="600"]
 
-Hello
+
+=== Stack Technique
+
+* *Kubernetes* : Orchestrates and dynamically creates pods
+* *Fabric API* : Triggers pod creation based on the file size
+* *Apache Ignite* : In-memory distributed storage for file lines
+* *Java Quarkus* : Lightweight JVM application in each pod, fast startup
+* *COS / S3* : Source of the files to be processed
+
+[%notitle]
+=== Architecture
+
+image::../../resources/images/k8s/inge_archi_423.png[width="1200"]
+
+
+
+
+
 
 
