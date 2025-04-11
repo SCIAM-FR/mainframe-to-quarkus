@@ -1,14 +1,7 @@
-== Main Section 1
+== The ingestion challange
 
-=== Subsection 1.1
+=== Classical way of reading files
 
-This is the first main section.
+=== RocksDB as a offheap map
 
--- Subsection 1
-This is the first subsection.
-
--- Subsection 2
-This is another subsection inside Section 1.
-
-===  Main Section 2
-This is the second main section.
+=== FFM and RocksDB

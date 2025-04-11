@@ -1,17 +1,52 @@
+== EBCDIC !! 
 
-== How to deal with EBCDIC
+=== EBCDIC File Encoding
 
-=== What are possible solutions
+* EBCDIC = Extended Binary Coded Decimal Interchange Code
+* Developed by IBM for mainframes and midrange systems
+* 8-bit character encoding, different from ASCII
+* Incompatible with ASCII — requires conversion for interoperability
+* Often used in legacy banking, insurance, and government systems
+a
 
-* 
-* 
 
-=== EBCDIC for never
+=== Why EBCDIC Matters
+====
+[.column]
 
-* Extented Binary Coded Decimal Interchange Code (EBCDIC)
-* Axway CFT (Cross File Transfer ) No way CFT is an external component for us
-* Bring Cobrix with the complexty of Apache Spark
-* JZOS Batch Launcher and Toolkit Capabilities and Features (We do not want the complexity of z/OS)
+* EBCDIC files are still in use today
+* Data exchanges between modern systems and mainframes require understanding of encoding
 
-The solution is to use a simple pretty and complete library called `JRecord` 
+[.column]
+image::ebcdic.png[width=300, title="EBCDIC Character Set"]
+====
+
+=== COBOL COPYBOOKS
+
+
+[source,cobol]
+----
+01 CUSTOMER-RECORD.
+   05 CUST-ID        PIC 9(5).
+   05 CUST-NAME      PIC A(30).
+   05 CUST-ADDRESS   PIC A(50).
+----
+
+* Standard record definitions for reading EBCDIC-encoded files
+* Used to define the structure of records in COBOL programs
+
+* Common use: standard record definitions for reading EBCDIC-encoded files
+* Ensures consistency in data structure definitions across COBOL programs
+* Often used in conjunction with data conversion routines (e.g. EBCDIC to ASCII)
+
+
+=== How to read EBCDIC files 
+
+
+
+=== EBCDIC files, The JVM way 
+* Java way 
+    **  Use Java libraries like Apache Commons Codec or JSch (No time to code from st)
+    **  Use EBCDIC encoding classes to read and convert files
+    **  Example: Apache Commons Codec
 
