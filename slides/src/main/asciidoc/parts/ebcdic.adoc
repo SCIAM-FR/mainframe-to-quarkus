@@ -1,14 +1,10 @@
-== EBCDIC !! 
-
-=== EBCDIC File Encoding
+== EBCDIC
 
 * EBCDIC = Extended Binary Coded Decimal Interchange Code
 * Developed by IBM for mainframes and midrange systems
 * 8-bit character encoding, different from ASCII
 * Incompatible with ASCII — requires conversion for interoperability
 * Often used in legacy banking, insurance, and government systems
-a
-
 
 === Why EBCDIC Matters
 ====
@@ -42,11 +38,11 @@ image::ebcdic.png[width=300, title="EBCDIC Character Set"]
 
 === How to read EBCDIC files 
 
-
+* **CFT Axway** (We are not allowed)
+* **JZOS** (No one want to touch mainframes)
+* **Cobrix** (We have to drag the complexity of Apache Spark) 
 
 === EBCDIC files, The JVM way 
-* Java way 
-    **  Use Java libraries like Apache Commons Codec or JSch (No time to code from st)
-    **  Use EBCDIC encoding classes to read and convert files
-    **  Example: Apache Commons Codec
+* Code something from scratch (We do not have much fime !!)
+* **JRecord** (Our best fit)
 
