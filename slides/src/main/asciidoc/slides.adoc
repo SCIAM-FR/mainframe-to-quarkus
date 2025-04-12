@@ -1,5 +1,5 @@
 = Mainframe to Quarkus
-Antoine Sabot-Durand; Charles Sabourdin; Chaker Fezai; Saïd Boudjelda;
+Antoine Sabot-Durand; Chaker Fezai; Saïd Boudjelda;
 :description: Mainframe to Quarkus presentation
 :copyright: CC BY-SA 4.0
 :data-uri:
@@ -49,8 +49,6 @@ image::asd.jpg[role="pull-right",width="200"]
 * Some passion for FP and Distributed Systems
 * Follow me: @bmscomp (GitHub)
 
-//TODO: add more info
-
 [.column]
 image::sb.jpg[role="pull-right",width="200"]
 
@@ -64,13 +62,6 @@ image::sb.jpg[role="pull-right",width="200"]
 [.column]
 image::cf.jpg[role="pull-right",width="200"]
 
-
-[.columns]
-== Charles Sabourdin
-
-[.column]
-* serial speaker
-//TODO: add more info
 
 [.column]
 image::cs.jpg[role="pull-right",width="200"]

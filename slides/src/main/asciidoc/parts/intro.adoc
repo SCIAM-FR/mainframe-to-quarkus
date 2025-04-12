@@ -1,6 +1,39 @@
 
-== This is the introduction
+== Once upon a time...
 
-Hello
+* The Blue Orange insurance group decided to move its accountancy system to from the mainframe to microservices.
 
+* We're talking about  100 subsidiaries, 1 billion accounts, and 200 million movements per day...
 
+* This talk will give you some insight on how we did it.
+
+[.columns]
+== What's a mainframe?
+
+[.column]
+TIP: A mainframe is a large computer that is used for large-scale computing purposes that require greater availability and security than a smaller-scale machine can offer.
+
+[.column]
+image::mainframe.png[width="85%"]
+
+== Why companies use mainframes today?
+* *Reliability*:
+  They are very resilient, with built-in redundancy and failover capabilities.
+* *Availability*:
+  They can run for long periods of time without downtime.
+* *Security*:
+  They have robust security features, including encryption, access controls, and auditing capabilities.
+* *Scalability*:
+  They can handle large volumes of transactions and data processing, making them suitable for high-demand applications.
+
+== So why companies want to move away from mainframes?
+* *Cost*:
+  Mainframes are expensive to maintain and operate.
+* *Talent*:
+  There is a shortage of skilled mainframe developers, making it difficult to find and retain talent.
+* *Integration*:
+  They can be difficult to integrate with modern applications and systems.
+* *Vendor lock-in*:
+  They can create vendor lock-in, making it difficult to switch to other platforms or vendors.
+* *Legacy code*:
+  They often rely on legacy code and systems that can be difficult to maintain and update.
