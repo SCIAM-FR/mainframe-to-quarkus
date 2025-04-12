@@ -9,15 +9,15 @@ image::../../resources/images/kogito/workflow.png[role="pull-center",width="300"
 
 === Cooking Pizza Workflow
 
-image::../../resources/images/kogito/recette.png[role="pull-center",width="1200"]
+image::../../resources/images/kogito/recettev2.png[role="pull-center",width="1200"]
 
 === Cooking Pizza Workflow
 
-image::../../resources/images/kogito/recette2.png[role="pull-center",width="1200"]
+image::../../resources/images/kogito/recettev2_1.png[role="pull-center",width="1200"]
 
 === Cooking Pizza Workflow
 
-image::../../resources/images/kogito/recette3.png[role="pull-center",width="1000"]
+image::../../resources/images/kogito/recettev3_1.png[role="pull-center",width="1000"]
 
 [source,subs="verbatim,quotes"]
 ----
@@ -37,18 +37,18 @@ public class Pizzeria {
 }
 ----
 
-=== Order Shipment Workflow
+=== Accounting Calculation Workflow
 
-image::../../resources/images/kogito/shipping1_1.png[role="pull-bottom",width="1200"]
+image::../../resources/images/kogito/ingetion-saga_v1_1.png[width="1200"]
 
-=== Order Shipment Workflow
+=== Accounting Calculation Workflow
 
-image::../../resources/images/kogito/order-sagav1_1.png[role="pull-bottom",width="1200"]
+image::../../resources/images/kogito/ingetion-saga_v2_1.png[width="1200"]
 
 [transition=zoom]
-=== Order Shipment Workflow
+=== Accounting Calculation Workflow
 
-image::../../resources/images/kogito/order-saga_v1_2.png[role="pull-bottom",width="1200"]
+image::../../resources/images/kogito/ingetion-saga_v3_1.png[role="pull-bottom",width="1200"]
 
 [transition=zoom]
 === BPMN 2.0
@@ -56,7 +56,7 @@ image::../../resources/images/kogito/order-saga_v1_2.png[role="pull-bottom",widt
 [transition-speed=fast]
 === BPMN 2.0
 
-image::../../resources/images/kogito/bpmn.png[role="pull-bottom",width="1000"]
+image::../../resources/images/kogito/bpmnv2.png[role="pull-bottom",width="1000"]
 
 === Order Shipment Workflow BPMN 2.0
 
