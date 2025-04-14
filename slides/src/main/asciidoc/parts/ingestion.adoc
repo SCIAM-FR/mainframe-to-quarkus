@@ -83,3 +83,6 @@ try (RandomAccessFile raf = new RandomAccessFile("file.bin", "r")) {
 * *Cons*:
   **  Complex error handling (e.g., `OutOfMemoryError` if mapping fails).
   **  OS-dependent (limited by virtual address space).
+
+=== Time for small Demo 
+* Compare both performance on very large files
