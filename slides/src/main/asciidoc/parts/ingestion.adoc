@@ -15,10 +15,9 @@ image::validation.png[role="pull-center",width=100%, width=100%]
 * Garbage collector tunning headache
 
 === What will be the solution then ? 
-
-* Use fixed length files (more control of memory)
-* Use RocksDB as a key-value store (Fast and reliable)
-* Use Memory Mapped files 
+* Use Fixed Length files (more control of memory)
+* Use RocksDB as a key-value store (Fast and Reliable)
+* Use Memory Mapped Files 
 * Validate files using multiple threads (More CPU usage)
 
 image::rocksdb.png[role="pull-center",width=100%, width=100%]
