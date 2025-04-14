@@ -46,3 +46,19 @@ image::ebcdic.png[width=300, title="EBCDIC Character Set"]
 * Code something from scratch (We do not have much fime !!)
 * **JRecord** (Our best fit)
 
+=== JRecord a road to Contribution
+* JRecord is an open-source Java library 
+* Available on GitHub https://github.com/bmTas/JRecord 
+* Yes, can use it in your project
+* You can contribute to it, every thing is welcome
+   ** Use it and test it
+   ** Report issues
+   ** Bug fixes
+   ** New features
+   ** Documentation
+
+=== JRecord, time to play with (Very Small demo)
+* Prepare an EBCDIC file
+* Prepare a Cobol Copybook
+* Prepare a Java program
+* Start reding EBCDIC file write into ASCII file
