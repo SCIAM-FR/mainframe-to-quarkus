@@ -44,7 +44,7 @@ image::ebcdic.png[width=300, title="EBCDIC Character Set"]
 * **Cobrix** (We have to drag the complexity of Apache Spark) 
 
 === EBCDIC files, The JVM way 
-* Code something from scratch (We do not have much fime !!)
+* Code something from scratch (We do not have much time !!)
 * **JRecord** (Our best fit)
 
 === JRecord a road to Contribution
