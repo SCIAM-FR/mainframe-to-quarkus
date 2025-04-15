@@ -31,7 +31,7 @@ Antoine Sabot-Durand; Chaker Fezai; Saïd Boudjelda;
 
 [.column]
 * Java Champion
-* Tech lead at SCIAM
+* Engineering director @SCIAM
 * Former CDI spec lead
 * Former MicroProfile Health and Fault Tolerance spec lead
 * Follow me: @antoine.sabot-durand.net
@@ -43,8 +43,8 @@ image::asd.jpg[role="pull-right"]
 == Saïd Boudjelda
 
 [.column]
-* Tech lead / Senior Backend Engineer @SCIAM
-* Senior Backend Engineer
+* Tech lead @SCIAM
+* Senior Backend Engineer on my daily life
 * Open source contributor (May be, I can say that now)
 * Some passion for FP and Distributed Systems
 * Follow me: @bmscomp (GitHub)
@@ -56,8 +56,11 @@ image::sb.jpg[role="pull-right"]
 == Chaker Fezai
 
 [.column]
-* Tech lead at SCIAM
-//TODO: add more info
+* Tech lead @SCIAM
+* Kogito and BPMN expert
+* Active tech speaker
+* Experienced Java Backend Engineer
+* Follow me: @fezaichaker (Twitter)
 
 [.column]
 image::cf.jpg[role="pull-right"]
