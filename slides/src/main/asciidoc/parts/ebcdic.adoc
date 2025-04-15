@@ -26,6 +26,7 @@ image::ebcdic.png[width=300, title="EBCDIC Character Set"]
    05 CUST-ID        PIC 9(5).
    05 CUST-NAME      PIC A(30).
    05 CUST-ADDRESS   PIC A(50).
+   05 CUST-BALANCE   PIC S9(9)V99 COMP-3.  * Ex : ±999999999.99
 ----
 
 * Standard record definitions for reading EBCDIC-encoded files
@@ -49,7 +50,7 @@ image::ebcdic.png[width=300, title="EBCDIC Character Set"]
 === JRecord a road to Contribution
 * JRecord is an open-source Java library 
 * Available on GitHub https://github.com/bmTas/JRecord 
-* Yes, can use it in your project
+* You can use in your project (We encourage you to do so)
 * You can contribute to it, every thing is welcome
    ** Use it and test it
    ** Report issues
@@ -57,8 +58,8 @@ image::ebcdic.png[width=300, title="EBCDIC Character Set"]
    ** New features
    ** Documentation
 
-=== JRecord, time to play with (Very Small demo)
+=== JRecord, time to play with (Very Small Demo)
 * Prepare an EBCDIC file
 * Prepare a Cobol Copybook
 * Prepare a Java program
-* Start reding EBCDIC file write into ASCII file
+* Start reding EBCDIC file and write into ASCII file
