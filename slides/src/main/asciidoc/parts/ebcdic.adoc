@@ -31,8 +31,6 @@ image::ebcdic.png[width=300, title="EBCDIC Character Set"]
 
 * Standard record definitions for reading EBCDIC-encoded files
 * Used to define the structure of records in COBOL programs
-
-* Common use: standard record definitions for reading EBCDIC-encoded files
 * Ensures consistency in data structure definitions across COBOL programs
 * Often used in conjunction with data conversion routines (e.g. EBCDIC to ASCII)
 
