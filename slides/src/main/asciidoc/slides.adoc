@@ -43,7 +43,7 @@ image::asd.jpg[role="pull-right",width="200"]
 [.column]
 * Tech lead / Senior Backend Engineer @SCIAM
 * Senior Backend Engineer
-* Open source contributor (I can say that )
+* Open source contributor (May be, I can say that now)
 * Some passion for FP and Distributed Systems
 * Follow me: @bmscomp (GitHub)
 

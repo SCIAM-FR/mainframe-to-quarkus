@@ -1,7 +1,87 @@
 == The ingestion challange
+* Convert EBCDIC files to ASCII (UTF-8)
+* Slice the files into chunks (Skip bad lines)
+* Validate each partition (Complext validation rules)
 
-=== Classical way of reading files
+image::validation.png[role="pull-center",width=100%, width=100%]
 
-=== RocksDB as a offheap map
+=== Worst ideas ever (Do not do that)
+* Use old fashioned Java IO (BufferedReader)
+* Read the content of the file and store into the heap
+* Use library that is supposed to implement fast map with Integer value for key (Not too fast)
+* Collision issue (Even with a good hash function)
+* OutOfMemory issues
+* Heap size tunning issue
+* Garbage collector tunning headache
 
-=== FFM and RocksDB
+=== What will be the solution then ? 
+* Use Fixed Length files (more control of memory)
+* Use RocksDB as a key-value store (Fast and Reliable)
+* Use Memory Mapped Files 
+* Validate files using multiple threads (More CPU usage)
+
+image::rocksdb.png[role="pull-center",width=100%, width=100%]
+
+=== RocksDB 
+
+* RocksDB is an embeddable, persistent key-value store for fast storage
+* It is a C++ library built on LevelDB
+* It is optimized for fast storage (SSD and Flash)
+* It is designed for fast read and write operations
+* It is used by many big companies (Facebook, LinkedIn, Yahoo, etc.)
+
+=== RocksDB, High Level Architecture
+
+image::rocksdb_architecture.png[role="pull-center",width=100%, width=100%]
+
+
+=== Memory Mapped Files vs BufferedReader
+
+[cols="2,1,1", options="header"]
+|===
+| **Aspect**          | **BufferedReader**        | **Memory-Mapped Files**
+| **Speed**           | Slower (sequential)       | Faster (direct OS access)
+| **Memory Overhead**  | Heap (buffer-controlled)  | Off-heap (OS-managed)
+| **Access Pattern**  | Sequential only           | Random access (like an array)
+|===
+
+=== Buffered Reader
+
+[source,java]
+----
+// Sequential, line-by-line reading
+try (BufferedReader br = new BufferedReader(new FileReader("file.txt"))) {
+    String line;
+    while ((line = br.readLine()) != null) { /* Process line */ }
+}
+----
+
+* *Pros*:
+  **  Handles text encoding automatically.
+  **  Safe for small-to-medium files.
+
+* *Cons*:
+  **  Slower for large files (multiple syscalls).
+  **  Heap memory usage.
+
+=== Memory-Mapped Files
+[source,java]
+----
+// Random access via OS mapping
+try (RandomAccessFile raf = new RandomAccessFile("file.bin", "r")) {
+    FileChannel channel = raf.getChannel();
+    MappedByteBuffer buffer = channel.map(READ_ONLY, 0, channel.size());
+    while (buffer.hasRemaining()) { byte b = buffer.get(); /* Direct access */ }
+}
+----
+
+* *Pros*:
+  **  Near-native speed (bypasses JVM heap).
+  **  Efficient for large/binary files.
+
+* *Cons*:
+  **  Complex error handling (e.g., `OutOfMemoryError` if mapping fails).
+  **  OS-dependent (limited by virtual address space).
+
+=== Time for small Demo 
+* Read using both ways and compare the results
