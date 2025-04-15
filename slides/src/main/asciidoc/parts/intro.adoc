@@ -16,7 +16,7 @@ TIP: A mainframe is a large computer that is used for large-scale computing purp
 [.column]
 image::mainframe.png[width="85%"]
 
-== Why companies use mainframes today?
+== Mainframes the good parts
 * *Reliability*:
   They are very resilient, with built-in redundancy and failover capabilities.
 * *Availability*:
@@ -26,14 +26,22 @@ image::mainframe.png[width="85%"]
 * *Scalability*:
   They can handle large volumes of transactions and data processing, making them suitable for high-demand applications.
 
-== So why companies want to move away from mainframes?
+== Mainframes the bad parts
 * *Cost*:
-  Mainframes are expensive to maintain and operate.
+  They are expensive to maintain and operate.
 * *Talent*:
-  There is a shortage of skilled mainframe developers, making it difficult to find and retain talent.
-* *Integration*:
-  They can be difficult to integrate with modern applications and systems.
+  shortage of skilled mainframe operators and developers (COBOL).
 * *Vendor lock-in*:
-  They can create vendor lock-in, making it difficult to switch to other platforms or vendors.
-* *Legacy code*:
-  They often rely on legacy code and systems that can be difficult to maintain and update.
+  IBM has a monopoly on the mainframe market.
+* *Lack of flexibility*:
+  They are often seen as rigid and inflexible, making it difficult to adapt to changing business needs.
+
+== Requirement to move from mainframe
+* *Courage*:
+ rewriting something that works is a big deal!
+* *Value Creation*:
+  The new system must be able to create value for the business.
+* *A good use case*:
+  If the system you want to migrate does only fata ingestion and simple consultation, it is not worth the effort.
+
+== Strategies to move

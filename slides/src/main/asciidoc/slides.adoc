@@ -16,10 +16,12 @@ Antoine Sabot-Durand; Chaker Fezai; Saïd Boudjelda;
 :imagesdir: ../resources/images
 :hide-uri-scheme:
 :revealjs_theme: white
-:revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@5.1.0
+:revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@5.2.1
 :revealjs_hash: true
-:revealjs_width: 1500
-:revealjs_center: false
+:revealjs_width: 1700
+:revealjs_height: 1100
+//:revealjs_center: false
+:revealjs_margin: 0.04
 :docinfo: shared
 :slides-url: //TODO define slides url
 :slides-src: https://github.com/SCIAM-FR/mainframe-to-quarkus
@@ -35,7 +37,7 @@ Antoine Sabot-Durand; Chaker Fezai; Saïd Boudjelda;
 * Follow me: @antoine.sabot-durand.net
 
 [.column]
-image::asd.jpg[role="pull-right",width="200"]
+image::asd.jpg[role="pull-right"]
 
 [.columns]
 == Saïd Boudjelda
@@ -48,7 +50,7 @@ image::asd.jpg[role="pull-right",width="200"]
 * Follow me: @bmscomp (GitHub)
 
 [.column]
-image::sb.jpg[role="pull-right",width="200"]
+image::sb.jpg[role="pull-right"]
 
 [.columns]
 == Chaker Fezai
@@ -58,16 +60,12 @@ image::sb.jpg[role="pull-right",width="200"]
 //TODO: add more info
 
 [.column]
-image::cf.jpg[role="pull-right",width="200"]
-
-
-[.column]
-image::cs.jpg[role="pull-right",width="200"]
+image::cf.jpg[role="pull-right"]
 
 == Agenda
 
 //TIP: _Slides_ here {slides-url}
-
+[none]
 * icon:clock-o[] Introduction and Architecture contexte et Storytelling [Antoine]
 * icon:clock-o[] From EBCDIC to ASCII, a massive ingestion strategies [Said]
 * icon:clock-o[] Management of K8s jobs for the Ignite cluster. [Chaker]

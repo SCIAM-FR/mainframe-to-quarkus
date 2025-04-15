@@ -1,9 +1,10 @@
-== The ingestion challange
+
+== The ingestion challenge
 * Convert EBCDIC files to ASCII (UTF-8)
 * Slice the files into chunks (Skip bad lines)
 * Validate each partition (Complext validation rules)
 
-image::validation.png[role="pull-center",width=100%, width=100%]
+image::validation.png[role="pull-center",width=100%]
 
 === Worst ideas ever (Do not do that)
 * Use old fashioned Java IO (BufferedReader)
@@ -20,7 +21,7 @@ image::validation.png[role="pull-center",width=100%, width=100%]
 * Use Memory Mapped Files 
 * Validate files using multiple threads (More CPU usage)
 
-image::rocksdb.png[role="pull-center",width=100%, width=100%]
+image::rocksdb.png[role="pull-center",width=50%]
 
 === RocksDB 
 
@@ -32,7 +33,7 @@ image::rocksdb.png[role="pull-center",width=100%, width=100%]
 
 === RocksDB, High Level Architecture
 
-image::rocksdb_architecture.png[role="pull-center",width=100%, width=100%]
+image::rocksdb_architecture.png[role="pull-center", width=85%]
 
 
 === Memory Mapped Files vs BufferedReader
