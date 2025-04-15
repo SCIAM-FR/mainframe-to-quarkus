@@ -39,16 +39,16 @@ public class Pizzeria {
 
 === Accounting Calculation Workflow
 
-image::../../resources/images/kogito/ingetion-saga_v1_1.png[width="1200"]
+image::../../resources/images/kogito/ingetion-saga_v1_1_1.png[width="1200"]
 
 === Accounting Calculation Workflow
 
-image::../../resources/images/kogito/ingetion-saga_v2_1.png[width="1200"]
+image::../../resources/images/kogito/ingetion-saga_v2_1_1.png[width="1200"]
 
 [transition=zoom]
 === Accounting Calculation Workflow
 
-image::../../resources/images/kogito/ingetion-saga_v3_1.png[role="pull-bottom",width="1200"]
+image::../../resources/images/kogito/ingetion-saga_v3_1_2.png[role="pull-bottom",width="1200"]
 
 [transition=zoom]
 === BPMN 2.0

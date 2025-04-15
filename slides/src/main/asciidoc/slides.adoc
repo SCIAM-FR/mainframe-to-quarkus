@@ -24,7 +24,6 @@ Antoine Sabot-Durand; Chaker Fezai; Saïd Boudjelda;
 :slides-url: //TODO define slides url
 :slides-src: https://github.com/SCIAM-FR/mainframe-to-quarkus
 
-
 [.columns]
 == Antoine Sabot-Durand
 
@@ -37,7 +36,6 @@ Antoine Sabot-Durand; Chaker Fezai; Saïd Boudjelda;
 
 [.column]
 image::asd.jpg[role="pull-right",width="200"]
-
 
 [.columns]
 == Saïd Boudjelda
@@ -66,7 +64,6 @@ image::cf.jpg[role="pull-right",width="200"]
 [.column]
 image::cs.jpg[role="pull-right",width="200"]
 
-
 == Agenda
 
 //TIP: _Slides_ here {slides-url}
@@ -92,6 +89,7 @@ include::parts/ingestion.adoc[]
 
 include::parts/kogito.adoc[]
 
+include::parts/monitoring.adoc[]
 
 == Conclusion
 

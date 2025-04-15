@@ -17,7 +17,11 @@ image::../../resources/images/k8s/inge_stacks.png[role="pull-center",width="600"
 image::../../resources/images/k8s/inge_archi_423.png[width="1200"]
 
 
-
+[.notes]
+--
+* tell anecdote
+* make a point
+--
 
 
 
