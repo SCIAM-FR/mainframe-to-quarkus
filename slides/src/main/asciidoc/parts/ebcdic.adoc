@@ -1,6 +1,6 @@
+[.columns]
 == EBCDIC
 
-[.column]
 * EBCDIC = Extended Binary Coded Decimal Interchange Code
 * Developed by IBM for **mainframes** and **midrange systems**
 * 8-bit character encoding, different from ASCII
@@ -8,7 +8,7 @@
 * Often used in legacy banking, insurance, and government systems
 
 [.column]
-image::midrage_system.png[width="40%"]
+image::midrage_system.png[width="80%"]
 
 === Why EBCDIC Matters
 ====
