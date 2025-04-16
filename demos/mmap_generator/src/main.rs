@@ -5,7 +5,7 @@ use std::io::{self};
 use std::time::Instant;
 use std::fs::OpenOptions;
 
-const RECORD_SIZE: usize = 32; // Fixed record size in bytes
+const RECORD_SIZE: usize = 30; // Fixed record size in bytes
 const NEWLINE: u8 = b'\n';
 const SPACE: u8 = b' ';
 
@@ -421,7 +421,7 @@ fn main() -> io::Result<()> {
 
     // Configuration
     const TOTAL_RECORDS: usize = 1_000_000_000; // Number of records to generate
-    const BUFFER_SIZE: usize = 10_000_000; // Records per buffer flush
+    const BUFFER_SIZE: usize = 1_000_000; // Records per buffer flush
     const FILE_SIZE: usize = TOTAL_RECORDS * (RECORD_SIZE);
 
     // Create and pre-size the file
@@ -445,7 +445,7 @@ fn main() -> io::Result<()> {
         .iter()
         .map(|(name, temp)| {
             let mut record = vec![SPACE; RECORD_SIZE];
-            let line = format!("{:<25}{:>6.1}", name, temp);
+            let line = format!("{:<25}{:>5.0}", name, temp);
             let line_bytes = line.as_bytes();
             let copy_len = line_bytes.len().min(RECORD_SIZE);
             record[..copy_len].copy_from_slice(&line_bytes[..copy_len]);
