@@ -1,5 +1,5 @@
 ##== Monitoring Visor
 
-== Monitoring and Observation Interface
+== Monitoring and Observation UI
 
 image::../../resources/images/kogito/monitoring.png[role="pull-center",width="1200"]
