@@ -7,11 +7,26 @@
 
 * This talk will give you some insight on how we did it.
 
+
+== WAP Application at Blue Orange
+
+* WAP (Worldwide Accounting Platform) is the mainframe application that handles all the accounting of the group
+* It is a monolithic COBOL application that has been in production for nearly 40 years
+* It receives huge amount of data from all the subsidiaries
+* A batch
+
+
 [.columns]
 == What's a mainframe?
 
 [.column]
+--
 TIP: A mainframe is a large computer that is used for large-scale computing purposes that require greater availability and security than a smaller-scale machine can offer.
+
+TIP: Mainframes are used primarily by large organizations for critical applications, bulk data processing, and transaction processing.
+
+TIP: Main language is COBOL (Common Business Oriented Language) and OS is Z/OS
+--
 
 [.column]
 image::mainframe.png[width="85%"]
@@ -44,4 +59,15 @@ image::mainframe.png[width="85%"]
 * *A good use case*:
   If the system you want to migrate does only data ingestion and simple consultation, it is not worth the effort.
 
-== Strategies to move
+
+
+
+== Strategies to move from mainframe
+
+* *code translation*:
+  Translate the code from COBOL to Java (or any other language). You don't change the architecture, you just change the languageand you generate non-maintainable code.
+
+
+== WAP's UP architecture
+
+image::Ingestion_big_picture.png[width="85%"]

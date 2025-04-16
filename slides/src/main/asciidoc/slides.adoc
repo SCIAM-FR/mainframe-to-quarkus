@@ -34,7 +34,7 @@ Antoine Sabot-Durand; Chaker Fezai; Saïd Boudjelda;
 * Engineering director @SCIAM
 * Former CDI spec lead
 * Former MicroProfile Health and Fault Tolerance spec lead
-* Follow me: @antoine.sabot-durand.net
+* Follow me on bs: @antoine.sabot-durand.net
 
 [.column]
 image::asd.jpg[role="pull-right"]
