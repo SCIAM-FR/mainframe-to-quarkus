@@ -58,9 +58,6 @@ image::../../resources/images/kogito/ingetion-saga_v3_1_2.png[role="pull-bottom"
 
 image::../../resources/images/kogito/bpmnv2.png[role="pull-bottom",width="1000"]
 
-=== Order Shipment Workflow BPMN 2.0
-
-image::../../resources/images/kogito/orders.svg[role="pull-bottom",width="2000"]
 
 [transition=zoom]
 === Kogito
@@ -115,6 +112,10 @@ image::../../resources/images/kogito/kogito_tools.svg[width="900"]
 === Order Shipment Workflow
 
 image::../../resources/images/kogito/demo_order_1.svg[width="1800"]
+
+=== Order Shipment Workflow BPMN 2.0
+
+image::../../resources/images/kogito/orders.svg[role="pull-bottom",width="2000"]
 
 === What you need for your first workflow
 
