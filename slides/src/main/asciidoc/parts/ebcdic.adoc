@@ -1,10 +1,14 @@
+[.columns]
 == EBCDIC
 
 * EBCDIC = Extended Binary Coded Decimal Interchange Code
-* Developed by IBM for mainframes and midrange systems
+* Developed by IBM for **mainframes** and **midrange systems**
 * 8-bit character encoding, different from ASCII
 * Incompatible with ASCII — requires conversion for interoperability
 * Often used in legacy banking, insurance, and government systems
+
+[.column]
+image::midrage_system.png[width="80%"]
 
 === Why EBCDIC Matters
 ====
@@ -14,7 +18,7 @@
 * Data exchanges between modern systems and mainframes require understanding of encoding
 
 [.column]
-image::ebcdic.png[width=300, title="EBCDIC Character Set"]
+image::ebcdic.png[width="40%", title="EBCDIC Character Set"]
 ====
 
 === COBOL COPYBOOKS
