@@ -46,12 +46,12 @@ public class LargeFileGenerator {
                     WeatherStation station = stations.get(ThreadLocalRandom.current().nextInt(stations.size()));
                     builder.append(StringPadding
                                     .padString(station.id(),
-                                            23,
+                                            15,
                                             StringPadding.Position.LEFT,
                                             ' '))
                             .append(StringPadding
                                     .padString(station.measurement() + "",
-                                            6,
+                                            5,
                                             StringPadding.Position.LEFT,
                                             ' '))
                             .append('\n');
