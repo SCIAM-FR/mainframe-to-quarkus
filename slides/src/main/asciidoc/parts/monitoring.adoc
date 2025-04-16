@@ -1,5 +1,60 @@
-##== Monitoring Visor
 
 == Monitoring and Observation UI
 
-image::../../resources/images/kogito/monitoring.png[role="pull-center",width="1200"]
+=== Global Dashboard View
+
+image::../../resources/images/monitoring/monitoring_1_1.png[role="pull-center",width="200"]
+
+[%step]
+* icon:clock-o[] Real-time global system overview
+* icon:pie-chart[] Statistics on incoming flows: total, in-progress, completed, failed
+* icon:eye[] Supervise microservices and database health
+* icon:user-cog[1x] Trigger corrective actions directly
+
+
+=== Flow Details
+
+image::../../resources/images/monitoring/monitoring_2_1.png[role="pull-center",width="800"]
+
+[%step]
+* icon:clock-o[] Filter flows by topology
+* icon:clock-o[] Track step-by-step flow execution
+* icon:clock-o[] Access step-level logs
+* icon:clock-o[] Available actions:
+- Restart (from beginning or specific step)
+- Cancel
+- Temporarily disable a flow type
+
+
+=== Microservices Management
+
+image::../../resources/images/monitoring/monitoring_3_1.png[role="pull-center",width="200"]
+
+* List all pods per microservice
+* Real-time status visualization
+* Available actions:
+* Restart pod
+* Manual stop
+
+[source,subs="verbatim,quotes"]
+----
+   public List<PodInfo> getPodsInfo() {
+
+        PodList kogitoPods = client.pods().inNamespace("kogito").list();
+        return kogitoPods.getItems().stream()
+                .map(pod -> {
+                    String name = pod.getMetadata().getName();
+                    String status = pod.getStatus() != null ? pod.getStatus().getPhase() : "Unknown";
+                    return new PodInfo(name, status);
+                }).collect(Collectors.toList());
+    }
+----
+
+=== Key Benefits
+
+* Centralized system supervision
+* Faster incident response
+* Fine-grained system observability
+* Reduced reliance on external tools and CLI
+
+
