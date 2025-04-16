@@ -1,19 +1,28 @@
-
+[.columns]
 == Once upon a time...
 
+[.column]
+[%step]
 * The Blue Orange insurance group decided to move its accountancy system to from the mainframe to microservices.
-
 * We're talking about  100 subsidiaries, 1 billion accounts, and 200 million movements per day...
-
+* The goal was to be able to process all this data as quickly as possible and to be able to scale the system.
 * This talk will give you some insight on how we did it.
 
+[.column.is-one-third]
+image::logoBlueOrange.png[width="100%"]
 
+[.columns]
 == WAP Application at Blue Orange
 
+[.column]
+[%step]
 * WAP (Worldwide Accounting Platform) is the mainframe application that handles all the accounting of the group
 * It is a monolithic COBOL application that has been in production for nearly 40 years
 * It receives huge amount of data from all the subsidiaries
-* A batch
+* A batch process runs every night to process all the data and generate the accounting entries
+
+[.column.is-one-fifth]
+image::oldy.png[]
 
 
 [.columns]
@@ -21,10 +30,13 @@
 
 [.column]
 --
+[%step]
 TIP: A mainframe is a large computer that is used for large-scale computing purposes that require greater availability and security than a smaller-scale machine can offer.
 
+[%step]
 TIP: Mainframes are used primarily by large organizations for critical applications, bulk data processing, and transaction processing.
 
+[%step]
 TIP: Main language is COBOL (Common Business Oriented Language) and OS is Z/OS
 --
 
@@ -32,6 +44,7 @@ TIP: Main language is COBOL (Common Business Oriented Language) and OS is Z/OS
 image::mainframe.png[width="85%"]
 
 == Mainframes the good parts
+[%step]
 * *Reliability*:
   They are very resilient, with built-in redundancy and failover capabilities.
 * *Availability*:
@@ -42,6 +55,7 @@ image::mainframe.png[width="85%"]
   They can handle large volumes of transactions and data processing, making them suitable for high-demand applications.
 
 == Mainframes the bad parts
+[%step]
 * *Cost*:
   They are expensive to maintain and operate.
 * *Talent*:
@@ -52,6 +66,7 @@ image::mainframe.png[width="85%"]
   They are often seen as rigid and inflexible, making it difficult to adapt to changing business needs.
 
 == Requirement to move from mainframe
+[%step]
 * *Courage*:
  rewriting something that works is a big deal!
 * *Value Creation*:
@@ -67,6 +82,19 @@ image::mainframe.png[width="85%"]
 * *code translation*:
   Translate the code from COBOL to Java (or any other language). You don't change the architecture, you just change the languageand you generate non-maintainable code.
 
+* *Monolith wrapping*:
+  Wrap the application in a concrete dome. Features are exposed as API without touching the content You don't change the architecture, you just change the language and you generate non-maintainable code.
+
+* *code rewriting*:
+  Rewrite the code from scratch. You change the architecture and you generate maintainable code.
+
+
+[.notes]
+--
+* *code rewriting* is the best option but it is also the most expensive one.
+* *code translation* is the worst option but it is also the cheapest one.
+* *monolith wrapping* is also called Chernobyl coffin.
+--
 
 == WAP's UP architecture
 

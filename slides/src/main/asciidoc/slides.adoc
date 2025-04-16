@@ -15,7 +15,7 @@ Antoine Sabot-Durand; Chaker Fezai; Saïd Boudjelda;
 :macros-on: subs="macros"
 :imagesdir: ../resources/images
 :hide-uri-scheme:
-:revealjs_theme: white
+:revealjs_theme: simple
 :revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@5.2.1
 :revealjs_hash: true
 :revealjs_width: 1700

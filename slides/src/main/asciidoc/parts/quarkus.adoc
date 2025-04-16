@@ -1,6 +1,6 @@
 
-== How we chose Quarkus
+== Why we chose Quarkus
 
-Hello
+
 
 
