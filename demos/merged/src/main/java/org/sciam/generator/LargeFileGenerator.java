@@ -17,7 +17,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class LargeFileGenerator {
 
-    private static final Path MEASUREMENT_FILE = Path.of("./store.txt");
+    private static final Path STORE_FILE = Path.of("./store.txt");
     static final Executor EXECUTOR_SERVICE = Executors.newWorkStealingPool();
     static final long ONE_BILLION = 1_000_000_000L;
 
@@ -26,8 +26,8 @@ public class LargeFileGenerator {
         int size = (int) ONE_BILLION;
 
         try {
-            Files.deleteIfExists(MEASUREMENT_FILE);
-            Files.createFile(MEASUREMENT_FILE);
+            Files.deleteIfExists(STORE_FILE);
+            Files.createFile(STORE_FILE);
         } catch (Exception e) {
             // ignore
         }
@@ -58,7 +58,7 @@ public class LargeFileGenerator {
                 }
 
                 try (BufferedWriter bw = Files
-                        .newBufferedWriter(MEASUREMENT_FILE, StandardOpenOption.APPEND)) {
+                        .newBufferedWriter(STORE_FILE, StandardOpenOption.APPEND)) {
                     bw.write(builder.toString());
                 } catch (IOException e) {
                     throw new RuntimeException(e);

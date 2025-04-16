@@ -1,5 +1,7 @@
 package org.sciam.generator;
 
+import java.util.Arrays;
+
 public class StringPadding {
 
     public enum Position {
@@ -8,39 +10,42 @@ public class StringPadding {
         CENTER  // Center (pad both sides)
     }
 
-    /**
-     * Pads a string to position it within a specified width
-     *
-     * @param input    The string to pad
-     * @param width    The total width of the output string
-     * @param position The desired position (LEFT, RIGHT, or CENTER)
-     * @param padChar  The character to use for padding
-     * @return The padded string
-     */
     public static String padString(String input, int width, Position position, char padChar) {
         if (input == null) {
             input = "";
         }
 
-        if (input.length() >= width) {
+        int inputLength = input.length();
+        if (inputLength >= width) {
             return input;
         }
 
-        int padLength = width - input.length();
+        int padLength = width - inputLength;
+        char[] result = new char[width];
 
         switch (position) {
             case LEFT:
-                return input + String.valueOf(padChar).repeat(padLength);
+                // Copier l'input puis ajouter les padding
+                input.getChars(0, inputLength, result, 0);
+                Arrays.fill(result, inputLength, width, padChar);
+                break;
             case RIGHT:
-                return String.valueOf(padChar).repeat(padLength) + input;
+                // Ajouter les padding puis copier l'input
+                Arrays.fill(result, 0, padLength, padChar);
+                input.getChars(0, inputLength, result, padLength);
+                break;
             case CENTER:
                 int leftPad = padLength / 2;
                 int rightPad = padLength - leftPad;
-                return String.valueOf(padChar).repeat(leftPad) + input
-                        + String.valueOf(padChar).repeat(rightPad);
+                Arrays.fill(result, 0, leftPad, padChar);
+                input.getChars(0, inputLength, result, leftPad);
+                Arrays.fill(result, leftPad + inputLength, width, padChar);
+                break;
             default:
                 return input;
         }
+
+        return new String(result);
     }
 
 }
