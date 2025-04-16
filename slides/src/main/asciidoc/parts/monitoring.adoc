@@ -1,4 +1,3 @@
-##== Monitoring Visor
 
 == Monitoring and Observation UI
 
@@ -26,6 +25,7 @@ image::../../resources/images/monitoring/monitoring_2_1.png[role="pull-center",w
 - Cancel
 - Temporarily disable a flow type
 
+
 === Microservices Management
 
 image::../../resources/images/monitoring/monitoring_3_1.png[role="pull-center",width="200"]
@@ -35,6 +35,20 @@ image::../../resources/images/monitoring/monitoring_3_1.png[role="pull-center",w
 * Available actions:
 * Restart pod
 * Manual stop
+
+[source,subs="verbatim,quotes"]
+----
+   public List<PodInfo> getPodsInfo() {
+
+        PodList kogitoPods = client.pods().inNamespace("kogito").list();
+        return kogitoPods.getItems().stream()
+                .map(pod -> {
+                    String name = pod.getMetadata().getName();
+                    String status = pod.getStatus() != null ? pod.getStatus().getPhase() : "Unknown";
+                    return new PodInfo(name, status);
+                }).collect(Collectors.toList());
+    }
+----
 
 === Key Benefits
 
