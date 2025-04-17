@@ -113,7 +113,7 @@ image::trex.jpg[width="85%"]
 
 == WAP's UP ingestion architecture
 
-image::Ingestion_big_picture.png[width="85%"]
+image::ingestion_big_picture.png[width="85%"]
 
 == WAP's UP consuming architecture
 
