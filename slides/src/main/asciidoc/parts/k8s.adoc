@@ -1,9 +1,10 @@
 == High-Performance Distributed File Processing
 
-image::../../resources/images/k8s/inge_stacks.png[role="pull-center",width="600"]
+ajouter l'image qui zoom sur la partie ignite (2a)
 
 
 === Stack Technique
+image::../../resources/images/k8s/inge_stacks.png[role="pull-center",width="600"]
 
 * *Kubernetes* : Orchestrates and dynamically creates pods
 * *Fabric API* : Triggers pod creation based on the file size
