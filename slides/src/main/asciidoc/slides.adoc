@@ -20,7 +20,7 @@ Antoine Sabot-Durand; Chaker Fezai; Saïd Boudjelda;
 :revealjs_hash: true
 :revealjs_width: 1700
 :revealjs_height: 1100
-//:revealjs_center: false
+:revealjs_navigationMode: linear
 :revealjs_margin: 0.04
 :docinfo: shared
 :slides-url: //TODO define slides url

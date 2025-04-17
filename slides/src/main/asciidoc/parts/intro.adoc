@@ -43,7 +43,10 @@ TIP: Main language is COBOL (Common Business Oriented Language) and OS is Z/OS
 [.column]
 image::mainframe.png[width="85%"]
 
+[.columns]
 == Mainframes the good parts
+
+[.column]
 [%step]
 * *Reliability*:
   They are very resilient, with built-in redundancy and failover capabilities.
@@ -54,7 +57,13 @@ image::mainframe.png[width="85%"]
 * *Scalability*:
   They can handle large volumes of transactions and data processing, making them suitable for high-demand applications.
 
+[.column.is-one-third]
+image::gateau_fromage.png[]
+
+[.columns]
 == Mainframes the bad parts
+
+[.column]
 [%step]
 * *Cost*:
   They are expensive to maintain and operate.
@@ -64,6 +73,11 @@ image::mainframe.png[width="85%"]
   IBM has a monopoly on the mainframe market.
 * *Lack of flexibility*:
   They are often seen as rigid and inflexible, making it difficult to adapt to changing business needs.
+
+[.column.is-one-third]
+image::trex.jpg[width="85%"]
+
+[.columns]
 
 == Requirement to move from mainframe
 [%step]
@@ -79,6 +93,7 @@ image::mainframe.png[width="85%"]
 
 == Strategies to move from mainframe
 
+[%step]
 * *code translation*:
   Translate the code from COBOL to Java (or any other language). You don't change the architecture, you just change the languageand you generate non-maintainable code.
 
@@ -91,11 +106,15 @@ image::mainframe.png[width="85%"]
 
 [.notes]
 --
-* *code rewriting* is the best option but it is also the most expensive one.
+* *code rewriting* is the best option, but it is also the most expensive one.
 * *code translation* is the worst option but it is also the cheapest one.
 * *monolith wrapping* is also called Chernobyl coffin.
 --
 
-== WAP's UP architecture
+== WAP's UP ingestion architecture
 
 image::Ingestion_big_picture.png[width="85%"]
+
+== WAP's UP consuming architecture
+
+image::cons_big_picture.png[width="85%"]
