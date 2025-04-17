@@ -1,21 +1,25 @@
 == High-Performance Distributed File Processing
 
-ajouter l'image qui zoom sur la partie ignite (2a)
+image::Ingestion_big_picture.png[width="85%"]
 
 
+[.columns]
 === Stack Technique
-image::../../resources/images/k8s/inge_stacks.png[role="pull-center",width="600"]
 
+[.column]
 * *Kubernetes* : Orchestrates and dynamically creates pods
-* *Fabric API* : Triggers pod creation based on the file size
+* *Fabric8 API* : Triggers pod creation based on the file size
 * *Apache Ignite* : In-memory distributed storage for file lines
 * *Java Quarkus* : Lightweight JVM application in each pod, fast startup
 * *COS / S3* : Source of the files to be processed
 
+[.column.is-one-third]
+image::k8s/inge_stacks.png[]
+
 [%notitle]
 === Architecture
 
-image::../../resources/images/k8s/inge_archi_423.png[width="1200"]
+image::k8s/inge_archi_423.png[width="1200"]
 
 
 [.notes]

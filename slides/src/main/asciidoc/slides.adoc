@@ -82,9 +82,9 @@ include::parts/intro.adoc[]
 
 include::parts/quarkus.adoc[]
 
-include::parts/k8s.adoc[]
-
 include::parts/ebcdic.adoc[]
+
+include::parts/k8s.adoc[]
 
 include::parts/ingestion.adoc[]
 
