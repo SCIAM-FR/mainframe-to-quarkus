@@ -5,7 +5,6 @@
 * Developed by IBM for **mainframes** and **midrange systems**
 * 8-bit character encoding, different from ASCII
 * Incompatible with ASCII — requires conversion for interoperability
-* Often used in legacy banking, insurance, and government systems
 
 [.column]
 image::midrage_system.png[width="80%"]
@@ -14,7 +13,6 @@ image::midrage_system.png[width="80%"]
 ====
 [.column]
 
-* EBCDIC files are still in use today
 * Data exchanges between modern systems and mainframes require understanding of encoding
 
 [.column]
@@ -50,9 +48,7 @@ image::ebcdic.png[width="40%", title="EBCDIC Character Set"]
 * **JRecord** (Our best fit)
 
 === JRecord a road to Contribution
-* JRecord is an open-source Java library 
-* Available on GitHub https://github.com/bmTas/JRecord 
-* You can use in your project (We encourage you to do so)
+* Open-source Java library available on GitHub https://github.com/bmTas/JRecord 
 * You can contribute to it, every thing is welcome
    ** Use it and test it
    ** Report issues
