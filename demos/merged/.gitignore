@@ -39,5 +39,6 @@ build/
 
 ## Ignore the generated large fixed length file
 store.txt
+store.data
 
 
