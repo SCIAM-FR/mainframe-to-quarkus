@@ -3,7 +3,7 @@
 
 === Orchestration
 
-ajouter le schéma global de l'archi
+image::Ingestion_big_picture.png[width="85%"]
 
 === Workflow Technologies
 

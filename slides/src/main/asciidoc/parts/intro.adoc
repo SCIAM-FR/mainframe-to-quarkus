@@ -1,3 +1,13 @@
+== Disclaimers
+
+[%step]
+* This Story is true
+* Some names have been changed by customer request
+* Some facts have been simplified for the sake of clarity
+* We won't talk about acounting business logic
+* We are not Mainframe experts
+
+
 [.columns]
 == Once upon a time...
 
@@ -23,6 +33,12 @@ image::logoBlueOrange.png[width="100%"]
 
 [.column.is-one-fifth]
 image::oldy.png[]
+
+== Wap's UP project
+[%step]
+* Wap's up was launched at the end of 2020
+* The goal was to rewrite the WAP application in Java and to move it to a microservices architecture
+* The project is expected to be completed in 2030/2031
 
 
 [.columns]
