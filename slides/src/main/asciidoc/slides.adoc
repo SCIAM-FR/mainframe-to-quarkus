@@ -67,7 +67,6 @@ image::cf.jpg[role="pull-right"]
 
 == Agenda
 
-TIP: {slides-url}
 [none]
 * icon:clock-o[] Introduction context and Architecture [Antoine]
 * icon:clock-o[] From EBCDIC to ASCII [Said]
