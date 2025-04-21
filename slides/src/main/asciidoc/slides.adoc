@@ -24,7 +24,7 @@ Antoine Sabot-Durand; Chaker Fezai; Saïd Boudjelda;
 :revealjs_navigationMode: linear
 :revealjs_margin: 0.04
 :docinfo: shared
-:slides-url: //TODO define slides url
+:slides-url: https://github.com/SCIAM-FR/mainframe-to-quarkus/blob/main/slides/Mainframe-to-Quarkus.pdf
 :slides-src: https://github.com/SCIAM-FR/mainframe-to-quarkus
 
 [.columns]
@@ -68,7 +68,7 @@ image::cf.jpg[role="pull-right"]
 
 == Agenda
 
-TIP: _Slides_ here {slides-url}
+TIP: {slides-url}
 [none]
 * icon:clock-o[] Introduction context and Architecture [Antoine]
 * icon:clock-o[] From EBCDIC to ASCII [Said]
