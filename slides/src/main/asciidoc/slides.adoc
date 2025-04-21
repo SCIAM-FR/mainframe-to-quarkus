@@ -16,7 +16,6 @@ Antoine Sabot-Durand; Chaker Fezai; Saïd Boudjelda;
 :imagesdir: ../resources/images
 :hide-uri-scheme:
 :revealjs_theme: simple
-//:revealjs_customtheme: ../resources/css/custom.css
 :revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@5.2.1
 :revealjs_hash: true
 :revealjs_width: 1700
@@ -24,7 +23,7 @@ Antoine Sabot-Durand; Chaker Fezai; Saïd Boudjelda;
 :revealjs_navigationMode: linear
 :revealjs_margin: 0.04
 :docinfo: shared
-:slides-url: https://github.com/SCIAM-FR/mainframe-to-quarkus/blob/main/slides/Mainframe-to-Quarkus.pdf
+:slides-url: https://bit.ly/m2q_DevoxxFr25
 :slides-src: https://github.com/SCIAM-FR/mainframe-to-quarkus
 
 [.columns]
@@ -35,7 +34,7 @@ Antoine Sabot-Durand; Chaker Fezai; Saïd Boudjelda;
 * Engineering director @SCIAM
 * Former CDI spec lead
 * Former MicroProfile Health and Fault Tolerance spec lead
-* Follow me on bs: @antoine.sabot-durand.net
+* Follow me on bs: https://bsky.app/profile/antoine.sabot-durand.net[@antoine.sabot-durand.net^]
 
 [.column]
 image::asd.jpg[role="pull-right"]
@@ -48,7 +47,7 @@ image::asd.jpg[role="pull-right"]
 * Senior Backend Engineer in my daily life
 * Open source contributor (May be, I can say that now)
 * Some passion for FP and Distributed Systems
-* Follow me: @bmscomp (GitHub)
+* Follow me: https://github.com/bmscomp[@bmscomp^]
 
 [.column]
 image::sb.jpg[role="pull-right"]
@@ -61,7 +60,7 @@ image::sb.jpg[role="pull-right"]
 * Kogito and BPMN expert
 * Active tech speaker
 * Experienced Java Backend Engineer
-* Follow me: @fezaichaker (Twitter)
+* Follow me: https://bsky.app/profile/chakerfezai.bsky.social[@chakerfezai.bsky.social^]
 
 [.column]
 image::cf.jpg[role="pull-right"]
