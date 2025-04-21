@@ -16,6 +16,7 @@ Antoine Sabot-Durand; Chaker Fezai; Saïd Boudjelda;
 :imagesdir: ../resources/images
 :hide-uri-scheme:
 :revealjs_theme: simple
+//:revealjs_customtheme: ../resources/css/custom.css
 :revealjsdir: https://cdn.jsdelivr.net/npm/reveal.js@5.2.1
 :revealjs_hash: true
 :revealjs_width: 1700
@@ -44,7 +45,7 @@ image::asd.jpg[role="pull-right"]
 
 [.column]
 * Tech lead @SCIAM
-* Senior Backend Engineer on my daily life
+* Senior Backend Engineer in my daily life
 * Open source contributor (May be, I can say that now)
 * Some passion for FP and Distributed Systems
 * Follow me: @bmscomp (GitHub)
@@ -67,17 +68,16 @@ image::cf.jpg[role="pull-right"]
 
 == Agenda
 
-//TIP: _Slides_ here {slides-url}
+TIP: _Slides_ here {slides-url}
 [none]
 * icon:clock-o[] Introduction context and Architecture [Antoine]
 * icon:clock-o[] From EBCDIC to ASCII [Said]
 * icon:clock-o[] Management of K8s jobs for the Ignite cluster. [Chaker]
 * icon:clock-o[] Massive ingestion strategies [Said]
-//* icon:clock-o[] Tooling, CI/CD, Cucumber, Liquibase [Antoine]
-* icon:clock-o[] Kogito and BPMN for business worklow and orchestration [Chaker]
-//* icon:clock-o[] Vault for Quarkus [Said]
+* icon:clock-o[] Kogito and BPMN for business workflow and orchestration [Chaker]
+* icon:clock-o[] Other technologies used on the project [Antoine]
 * icon:clock-o[] UIs for managing ingestion jobs in K8s and Kogito [Chaker]
-//* icon:clock-o[] Front-end tools and back-end integration with MyBatis ORM. [Antoine]
+
 
 include::parts/intro.adoc[]
 
@@ -91,13 +91,11 @@ include::parts/ingestion.adoc[]
 
 include::parts/kogito.adoc[]
 
+include::parts/other_technos.adoc[]
+
 include::parts/monitoring.adoc[]
 
-== Conclusion
-
-== Take away
-
-//TODO: add more info
+== Questions
 
 == References
 

@@ -34,22 +34,22 @@ image::ebcdic.png[width="40%", title="EBCDIC Character Set"]
 * Standard record definitions for reading EBCDIC-encoded files
 * Used to define the structure of records in COBOL programs
 * Ensures consistency in data structure definitions across COBOL programs
-* Often used in conjunction with data conversion routines (e.g. EBCDIC to ASCII)
+* Often used in conjunction with data conversion routines (e.g., EBCDIC to ASCII)
 
 
 === How to read EBCDIC files 
 
-* **CFT Axway** (We are not allowed)
-* **Java™ Batch Launcher and Toolkit for z/OS® (JZOS) ** (No one want to touch mainframes)
-* **Cobrix - COBOL Data Source for Apache Spark** (We have to drag the complexity of Apache Spark) 
+* *CFT Axway* (We are not allowed)
+* *Java™ Batch Launcher and Toolkit for z/OS® (JZOS)* (No one wants to touch mainframes)
+* *Cobrix - COBOL Data Source for Apache Spark* (We have to drag the complexity of Apache Spark)
 
 === EBCDIC files, The JVM way 
-* Code something from scratch (We do not have much time !!)
+* Code something from scratch, (We had little time!!)
 * **JRecord** (Our best fit)
 
 === JRecord a road to Contribution
 * Open-source Java library available on GitHub https://github.com/bmTas/JRecord 
-* You can contribute to it, every thing is welcome
+* You can contribute to it, everything is welcome
    ** Use it and test it
    ** Report issues
    ** Bug fixes
@@ -60,4 +60,4 @@ image::ebcdic.png[width="40%", title="EBCDIC Character Set"]
 * Prepare an EBCDIC file
 * Prepare a Cobol Copybook
 * Prepare a Java program
-* Start reding EBCDIC file and write into ASCII file
+* Start reading EBCDIC file and write into ASCII file

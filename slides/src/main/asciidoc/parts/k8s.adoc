@@ -7,11 +7,11 @@ image::Ingestion_big_picture.png[width="85%"]
 === Stack Technique
 
 [.column]
-* *Kubernetes* : Orchestrates and dynamically creates pods
-* *Fabric8 API* : Triggers pod creation based on the file size
-* *Apache Ignite* : In-memory distributed storage for file lines
-* *Java Quarkus* : Lightweight JVM application in each pod, fast startup
-* *COS / S3* : Source of the files to be processed
+* *Kubernetes:* Orchestrates and dynamically creates pods
+* *Fabric8 API:* Triggers pod creation based on the file size
+* *Apache Ignite:* In-memory distributed storage for file lines
+* *Java Quarkus:* Lightweight JVM application in each pod, fast startup
+* *COS/S3:* Source of the files to be processed
 
 [.column.is-one-third]
 image::k8s/inge_stacks.png[]

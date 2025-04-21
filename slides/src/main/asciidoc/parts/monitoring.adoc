@@ -1,21 +1,23 @@
 
 == Monitoring and Observation UI
 
+[.columns]
 === Global Dashboard View
-
-image::../../resources/images/monitoring/monitoring_1_1.png[role="pull-center",width="200"]
-
+[.column]
 [%step]
 * icon:clock-o[] Real-time global system overview
 * icon:pie-chart[] Statistics on incoming flows: total, in-progress, completed, failed
 * icon:eye[] Supervise microservices and database health
 * icon:user-cog[1x] Trigger corrective actions directly
 
+[.column]
+image::monitoring/monitoring_1_1.png[role="pull-center",width="300"]
 
+
+[.columns]
 === Flow Details
 
-image::../../resources/images/monitoring/monitoring_2_1.png[role="pull-center",width="800"]
-
+[.column]
 [%step]
 * icon:clock-o[] Filter flows by topology
 * icon:clock-o[] Track step-by-step flow execution
@@ -25,17 +27,24 @@ image::../../resources/images/monitoring/monitoring_2_1.png[role="pull-center",w
 - Cancel
 - Temporarily disable a flow type
 
+[.column]
+image::monitoring/monitoring_2_1.png[role="pull-center",width="800"]
 
+
+[.columns]
 === Microservices Management
 
-image::../../resources/images/monitoring/monitoring_3_1.png[role="pull-center",width="200"]
 
+[.column]
+--
+[%step]
 * List all pods per microservice
 * Real-time status visualization
 * Available actions:
 * Restart pod
 * Manual stop
 
+[%step]
 [source,subs="verbatim,quotes"]
 ----
    public List<PodInfo> getPodsInfo() {
@@ -49,6 +58,10 @@ image::../../resources/images/monitoring/monitoring_3_1.png[role="pull-center",w
                 }).collect(Collectors.toList());
     }
 ----
+--
+
+[.column.is-one-fifth]
+image::monitoring/monitoring_3_1.png[role="pull-center",width="200"]
 
 === Key Benefits
 

@@ -1,0 +1,42 @@
+
+== Other technologies used in the projet
+
+[.columns]
+=== Cucumber
+
+[.column]
+[%step]
+* Cucumber is a testing framework that supports Behavior Driven Development (BDD).
+* As we have a lot of SQL queries to test, we needed a way to test them.
+* It was a blessing for us to have a common language between devs and business.
+* In the end, BA were writing the tests and devs only creating new vocabulary.
+
+[.column.is-one-fifth]
+image::cucumber_logo.png[width="100%"]
+
+
+[.columns]
+=== Liquibase
+[.column]
+[%step]
+* Liquibase is an open-source database schema change management tool.
+* We have multiple schemas to manage on the projet
+* It was a bit hard to have our DBA accept this tool
+* Flyway was also considered but not chosen due to cost
+
+[.column.is-one-fifth]
+image::liquibase_logo.png[width="100%"]
+
+[.columns]
+=== Mybatis
+[.column]
+[%step]
+* Mybatis is a 20-year-old ORM Java framework.
+* It allows working very close to SQL.
+* You can put dynamic part in your SQL queries.
+* Object Mapping is very flexible
+* Works with XML or Annotations
+
+[.column.is-one-third]
+image::mybatis_logo.png[]
+

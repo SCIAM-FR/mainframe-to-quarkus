@@ -91,7 +91,7 @@ image::../../resources/images/kogito/kogito_1.svg[role="pull-bottom",width="400"
 * icon:clock[1x] Long startup time
 * icon:microchip[1x] Large compute consumption
 * icon:tachometer[1x] Poor performance
-* icon:user-cog[1x] Affect developers productivity
+* icon:user-cog[1x] Affect developers' productivity
 
 === WHY KOGITO
 

@@ -4,7 +4,7 @@
 * This Story is true
 * Some names have been changed by customer request
 * Some facts have been simplified for the sake of clarity
-* We won't talk about acounting business logic
+* We won't talk about accounting business logic
 * We are not Mainframe experts
 
 
@@ -28,7 +28,7 @@ image::logoBlueOrange.png[width="100%"]
 [%step]
 * WAP (Worldwide Accounting Platform) is the mainframe application that handles all the accounting of the group
 * It is a monolithic COBOL application that has been in production for nearly 40 years
-* It receives huge amount of data from all the subsidiaries
+* It receives a huge amount of data from all the subsidiaries
 * A batch process runs every night to process all the data and generate the accounting entries
 
 [.column.is-one-fifth]
@@ -39,7 +39,13 @@ image::oldy.png[]
 * Wap's up was launched at the end of 2020
 * The goal was to rewrite the WAP application in Java and to move it to a microservices architecture
 * The project is expected to be completed in 2030/2031
-
+* the first phase of the project (biggest) will be in service in autumn
+* The team is composed of:
+- 12 Java Devs,
+- 5 teradata devs,
+- 4 front devs,
+- 10 Business Analysts,
+- 1 tech lead, 1 PMO and 2 Managers
 
 [.columns]
 == What's a mainframe?
@@ -110,20 +116,20 @@ image::trex.jpg[width="85%"]
 == Strategies to move from mainframe
 
 [%step]
-* *code translation*:
-  Translate the code from COBOL to Java (or any other language). You don't change the architecture, you just change the languageand you generate non-maintainable code.
+* *Code translation*:
+  Translate the code from COBOL to Java (or any other language). You don't change the architecture, you just change the language, and you generate non-maintainable code.
 
 * *Monolith wrapping*:
-  Wrap the application in a concrete dome. Features are exposed as API without touching the content You don't change the architecture, you just change the language and you generate non-maintainable code.
+  Wrap the application in a concrete dome. Features are exposed as API without touching the content You don't change the architecture, you just change the language, and you generate non-maintainable code.
 
-* *code rewriting*:
+* *Code rewriting*:
   Rewrite the code from scratch. You change the architecture and you generate maintainable code.
 
 
 [.notes]
 --
 * *code rewriting* is the best option, but it is also the most expensive one.
-* *code translation* is the worst option but it is also the cheapest one.
+* *code translation* is the worst option, but it is also the cheapest one.
 * *monolith wrapping* is also called Chernobyl coffin.
 --
 

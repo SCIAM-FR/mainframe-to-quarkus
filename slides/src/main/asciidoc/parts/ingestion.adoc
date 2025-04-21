@@ -2,18 +2,18 @@
 == The ingestion challenge
 * Convert EBCDIC files to ASCII (UTF-8)
 * Slice the files into chunks (Skip bad lines)
-* Validate each partition (Complext validation rules)
+* Validate each partition (Complex validation rules)
 
 image::validation.png[role="pull-center",width=100%]
 
 === Worst ideas ever (Do not do that)
-* Use old fashioned Java IO (BufferedReader)
+* Use old-fashioned Java IO (BufferedReader)
 * Read the content of the file and store into the heap
 * Collision issue (Even with a good hash function)
 * OutOfMemory and heap space issues
-* Garbage collector tunning headache
+* Garbage collector tuning headache
 
-=== What will be the solution then ? 
+=== What will be the solution then?
 * Use Fixed Length files (more control of memory)
 * Use RocksDB as a key-value store (Fast and Reliable)
 * Use Memory Mapped Files (FFM API de JDK 23)
@@ -34,7 +34,7 @@ image::rocksdb.png[role="pull-center",width=50%]
 image::rocksdb_architecture.png[role="pull-center", width=85%]
 
 
-=== Memory Mapped Files vs BufferedReader
+=== Memory Mapped Files vs. BufferedReader
 
 [cols="2,1,1", options="header"]
 |===
@@ -82,5 +82,5 @@ try (RandomAccessFile raf = new RandomAccessFile("file.bin", "r")) {
   **  Complex error handling (e.g., `OutOfMemoryError` if mapping fails).
   **  OS-dependent (limited by virtual address space).
 
-=== Time for small Demo 
+=== Time for a small Demo
 * Read using both ways and compare the results

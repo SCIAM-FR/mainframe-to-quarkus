@@ -1,17 +1,27 @@
 
-== Why we chose Quarkus?
+[.columns]
+== Why Quarkus?
+[.column]
 [%step]
-* Quarkus is a Java framework designed for Kubernetes and cloud-native environments
-* It optimizes Java specifically for Kubernetes and provides a unified configuration model
+* Quarkus is a cloud-native Java framework
 * It has a fast startup time and low memory footprint
 * It has a huge ecosystem of libraries and extensions
 * It can go further thanks to GraalVM native image
 
-== Why we needed a big SQL engine like Teradata?
+[.column.is-one-fifth]
+image::quarkus_logo.png[width="100%"]
+
+[.columns]
+== Why did we need a big SQL engine like Teradata?
+[.column]
 [%step]
 * Teradata is a massively parallel processing (MPP) SQL engine
 * We needed to process a lot of files
-* We needed a powerful SQL engine to generate huge GROUP BY and JOINs request
+* We needed a powerful SQL engine to generate huge GROUP BY and JOINs requests
+
+[.column.is-one-fifth]
+image::teradata_logo.png[width="100%"]
+
 
 
 
